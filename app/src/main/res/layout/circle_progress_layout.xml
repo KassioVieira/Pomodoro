@@ -2,7 +2,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="250dp"
     android:layout_height="250dp"
-    android:background="@drawable/circular_item">
+    android:background="@drawable/circular_item"
+    android:elevation="8dp"
+    >
 
     <TextView
         android:id="@+id/progress_text"

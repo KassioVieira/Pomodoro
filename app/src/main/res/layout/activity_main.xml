@@ -13,7 +13,7 @@
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pomodoro"
+        android:text="@string/pomodoro_app_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="30sp"
@@ -23,6 +23,7 @@
         />
 
     <include
+        android:id="@+id/progress_component"
         layout="@layout/circle_progress_layout"
         android:layout_width="250dp"
         android:layout_height="250dp"
@@ -31,4 +32,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
             />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/progress_component"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="81dp">
+
+        <TextView
+            android:id="@+id/shortbreak"
+            android:layout_width="@dimen/text_medium_width"
+            android:layout_height="wrap_content"
+            android:text="@string/short_break"
+            android:textSize="@dimen/text_medium"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <TextView
+            android:id="@+id/pomodoro"
+            android:layout_width="@dimen/text_large_width"
+            android:layout_height="wrap_content"
+            android:text="@string/pomodoro"
+            android:textSize="@dimen/text_large"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <TextView
+            android:id="@+id/longbreak"
+            android:layout_width="@dimen/text_medium_width"
+            android:layout_height="wrap_content"
+            android:text="@string/long_break"
+            android:textSize="@dimen/text_medium"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

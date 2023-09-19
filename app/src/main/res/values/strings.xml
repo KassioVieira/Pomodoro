@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pomodoro</string>
+    <string name="long_break">long break</string>
+    <string name="pomodoro">pomodoro</string>
+    <string name="short_break">short break</string>
+    <string name="pomodoro_app_name">Pomodoro</string>
 </resources>

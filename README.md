@@ -5,7 +5,7 @@ Layout used is based in this https://www.figma.com/community/file/10717054483411
 <table>
   <tr>
     <td>
-      <img src="app.png" width="200"/>
+      <img src="app2.png" width="200"/>
     </td>
   </tr>
 </table>
