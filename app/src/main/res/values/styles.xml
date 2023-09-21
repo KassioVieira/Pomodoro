@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+    </style>
+
+    <style name="CustomCircleFAB" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.AppTheme.CircleFab</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.AppTheme.CircleFab" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

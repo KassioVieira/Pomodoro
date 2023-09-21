@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:paddingTop="36dp"
-    android:paddingHorizontal="16dp"
     >
 
     <TextView
+        android:paddingHorizontal="16dp"
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,12 +28,15 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="86dp"
+        android:paddingHorizontal="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
             />
 
     <LinearLayout
+        android:id="@+id/options"
+        android:paddingHorizontal="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/progress_component"
@@ -75,4 +78,31 @@
             />
 
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="36dp"
+        style="@style/CustomCircleFAB"
+        app:backgroundTint="@color/primary"
+        app:srcCompat="@drawable/play"
+        android:contentDescription="button"
+        app:fabCustomSize="100dp"
+        app:tint="@color/secondary"
+        />
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
